@@ -21,12 +21,12 @@ Line | Description | Quantity | Links
 14 | Keycaps | 44x 1U + 2x 1.5U| 
 
 
-## Receiver
+## LED-Receiver
 Line | Description | Quantity | Links
 --- | --- | --- | ---
-1 | Receiver Interface PCB | 1 | [files](https://github.com/satt99/comet46-hardware/tree/master/gerbers/receiver) 
+1 | Receiver Interface PCB | 1 | [files](https://github.com/satt99/comet46-hardware/tree/master/gerbers/ledreceiver) 
 2 | MDBT40-256RV3 nRF51822 | 1 | [seeedstudio](https://www.seeedstudio.com/MDBT40-256RV3-nRF51822-based-BLE-module-p-2503.html), [eleshop](http://eleshop.jp/shop/g/gGAB314/)
-3 | Arduino Pro Mirco | 1 | 
+3 | Pro Mirco | 1 | 
 4 | Cree CLVBA-FKA (or any other pin-compatible PLCC-4 LED) | 1 | [digikey](https://www.digikey.com/product-detail/en/cree-inc/CLVBA-FKA-CAEDH8BBB7A363/CLVBA-FKA-CAEDH8BBB7A363CT-ND/2650500), [marutsu](https://www.marutsu.co.jp/pc/i/16173639/)
 5 | 1117 3.3v regulator in SOT223 (many types available) | 1 | [digikey](https://www.digikey.com/product-detail/en/diodes-incorporated/AZ1117IH-3.3TRG1/AZ1117IH-3.3TRG1DICT-ND/5699682), [marutsu](https://www.marutsu.co.jp/pc/i/16140973/)
 6 | 1206 4.7k resistor array | 2 | [digikey](https://www.digikey.com/product-detail/en/stackpole-electronics-inc/RAVF164DJT4K70/RAVF164DJT4K70CT-ND/2425255), [marutsu](https://www.marutsu.co.jp/pc/i/15932029/)
@@ -37,3 +37,25 @@ Line | Description | Quantity | Links
 11 | 0603 (1608 meteric) SMD 1uF capacitor | 1 | 
 12 | 0603 (1608 meteric) SMD 12pF capacitor | 2 | 
 
+
+## OLED-Display-Receiver
+Line | Description | Quantity | Links | Reference
+--- | --- | --- | --- | ---
+1 | Receiver Interface PCB | 1 | [files](https://github.com/satt99/comet46-hardware/tree/master/gerbers/oled-display-receiver) | 
+2 | MDBT40-256RV3 nRF51822 | 1 | [seeedstudio] (https://www.seeedstudio.com/MDBT40-256RV3-nRF51822-based-BLE-module-p-2503.html), [eleshop](http://eleshop.jp/shop/g/gGAB314/) | U1
+3 | ATMEGA32U4-AUR | 1 |  | U2
+4 | USB male type A connector | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gC-02236/) | J1
+5 | SSD1306 128x32 (OLED display module) | 1 | [yushakobo](https://yushakobo.jp/shop/oled/) | J3
+6 | 1206 (3216 meteric) Polyfuse | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gP-13490/) | F1
+7 | 0603 (1608 meteric) Schottky diode | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gI-01370/) | D1
+8 | 1210 (3225 metric) 16MHz crystal | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gP-02457/) | Y1
+9 | 3.3v regulator in SOT23 | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gI-11360/) | U3
+10 | Straight 0.1" header (for stacking OLED board & programming MDBT40) | 2 | 1x4pin | | J2 & J3
+11 | 0603 (1608 meteric) SMD 0.1uF capacitor | 1 | | C6
+12 | 0603 (1608 meteric) SMD 1uF capacitor | 4 | | C3, C4, C5, C7
+13 | 0603 (1608 meteric) SMD 12pF capacitor | 2 | | C1, C2
+14 | 0603 (1608 meteric) SMD 22ohm resistor | 2 | | R4, R5
+15 | 0603 (1608 meteric) SMD 2.4kohm resistor | 1 | | R2
+16 | 0603 (1608 meteric) SMD 4.7kohm resistor | 1 | | R3
+17 | 0603 (1608 meteric) SMD 10kohm resistor | 1 | | R1
+18 | SMD tactile button (many compatible) | 1 | [akizuki](http://akizukidenshi.com/catalog/g/gP-06185/) | SW1
